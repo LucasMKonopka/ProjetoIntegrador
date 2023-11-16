@@ -27,12 +27,18 @@
 
     <main>
         <div id="container-principal">
+                <div id = "CadastrodeAnimais">
+                    <h2><strong>Cadastre o Animal</strong></h2>
+                </div>
             
 
             <!-- Formulário de Cadastro de Animais -->
             <form id="formCadastroAnimal">
-                <label for="nome">Nome do Animal:</label>
+                <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
+
+                <label for="datanasc">Data de nascimento:</label>
+                <input type="char" id="datanasc" name="datanasc" required>
 
                 <label for="especie">Espécie:</label>
                 <input type="text" id="especie" name="especie" required>
@@ -40,20 +46,24 @@
                 <label for="idade">Idade:</label>
                 <input type="number" id="idade" name="idade" required>
 
-                <label for="datanasc">Data Nascimento:</label>
-                <input type="char" id="datanasc" name="datanasc" required>
-
                 <label for="sexo">Sexo:</label>
                 <input type="text" id="sexo" name="sexo" required>
 
                 <label for="raça">Raça:</label>
                 <input type="text" id="raça" name="raça" required>
 
-                <label for="Porte">Porte:</label>
+                <label for="porte">Porte:</label>
                 <input type="text" id="porte" name="porte" required>
 
-                <button type="button" onclick="cadastrarAnimal()">Cadastrar Animal</button>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <label for="observacoes">Observações:</label>
+                <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+
+                <div>
+                    <button type="button" id="cancelar" onclick="cancelarCadastro()">Cancelar</button>
+                    <button type="button" id="salvar" onclick="salvaranimal()">Salvar</button>
+                    
+                </div>
+                <br><br>
             </form>
 
             <!-- Mensagem de Cadastro (pode ser um alert ou uma div na página) -->

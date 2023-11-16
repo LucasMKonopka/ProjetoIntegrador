@@ -31,7 +31,7 @@ function cadastrarAnimal() {
     // Por exemplo, você pode usar AJAX para enviar os dados para o servidor.
 
     // Exemplo de exibição dos dados (substitua por sua lógica específica)
-    alert('Animal cadastrado:\nNome: ' + animal.nome + '\nEspécie: ' + animal.especie + '\nIdade: ' + animal.idade + '\nraça: ' + animal.raça + '\porte: ' + animal.porte + '\ndatanasc: ' + animal.datanasc + '\nsexo: ' + animal.sexo);
+    alert('Animal cadastrado:\nNome: ' + animal.nome + '\nEspécie: ' + animal.especie + '\nIdade: ' + animal.idade + '\nraça: ' + animal.raça + '\nporte: ' + animal.porte + '\ndatanasc: ' + animal.datanasc + '\nsexo: ' + animal.sexo);
 
     // Limpe o formulário
     document.getElementById('nome').value = '';
