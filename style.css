@@ -1,0 +1,53 @@
+#container-cabecario{
+    height: 130px;
+    background-color: #68D8B0;
+    display: flex;
+}
+
+#img-logo{
+    padding-top: 15px;
+    padding-left:20px ;
+}
+
+#titulo-cabecario{
+    padding-top: 60px;
+    padding-left: 20px ;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#container-rodape{
+    background-color: #68D8B0;
+    height: 170px;
+}

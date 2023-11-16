@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div id="container-cabecario">
+            <div id="img-logo">
+                <img src="./imagem/Logo.png" alt="">
+            </div>
+
+            <div id="titulo-cabecario">
+                <h1><strong>Vet-tech</strong></h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="container-principal">
+            
+
+            <!-- Formulário de Cadastro de Animais -->
+            <form id="formCadastroAnimal">
+                <label for="nome">Nome do Animal:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="especie">Espécie:</label>
+                <input type="text" id="especie" name="especie" required>
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required>
+
+                <label for="datanasc">Data Nascimento:</label>
+                <input type="char" id="datanasc" name="datanasc" required>
+
+                <label for="sexo">Sexo:</label>
+                <input type="text" id="sexo" name="sexo" required>
+
+                <label for="raça">Raça:</label>
+                <input type="text" id="raça" name="raça" required>
+
+                <label for="Porte">Porte:</label>
+                <input type="text" id="porte" name="porte" required>
+
+                <button type="button" onclick="cadastrarAnimal()">Cadastrar Animal</button>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </form>
+
+            <!-- Mensagem de Cadastro (pode ser um alert ou uma div na página) -->
+            <div id="mensagemCadastro"></div>
+
+
+        </div>
+    </main>
+
+
+    <footer>
+        <div id="container-rodape">
+
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
