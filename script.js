@@ -30,9 +30,6 @@ function cadastrarAnimal() {
     // Aqui você pode enviar o objeto animal para o backend ou fazer o que for necessário
     // Por exemplo, você pode usar AJAX para enviar os dados para o servidor.
 
-    // Exemplo de exibição dos dados (substitua por sua lógica específica)
-    alert('Animal cadastrado:\nNome: ' + animal.nome + '\nEspécie: ' + animal.especie + '\nIdade: ' + animal.idade + '\nraça: ' + animal.raça + '\nporte: ' + animal.porte + '\ndatanasc: ' + animal.datanasc + '\nsexo: ' + animal.sexo);
-
     // Limpe o formulário
     document.getElementById('nome').value = '';
     document.getElementById('especie').value = '';
@@ -45,3 +42,7 @@ function cadastrarAnimal() {
 
 // Exemplo de uso de um botão no HTML para acionar a função cadastrarAnimal
 // <button onclick="cadastrarAnimal()">Cadastrar Animal</button>
+
+function salvaranimal(){
+    window.location.href = "inicial.html";
+}
