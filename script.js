@@ -1,16 +1,18 @@
-// Defina uma função para manipular o envio do formulário
-function cadastrarAnimal() {
+var listaAnimais = [];
+
+// Função para cadastrar um novo animal
+function salvarAnimal() {
     // Obtenha os valores dos campos do formulário
     var nome = document.getElementById('nome').value;
     var especie = document.getElementById('especie').value;
     var idade = document.getElementById('idade').value;
-    var raça = document.getElementById('raça').value;
+    var raca = document.getElementById('raça').value;
     var porte = document.getElementById('porte').value;
     var datanasc = document.getElementById('datanasc').value;
     var sexo = document.getElementById('sexo').value;
 
     // Valide os campos (adapte conforme necessário)
-    if (nome === '' || especie === '' || idade === '' || raça == '' || porte == '' || datanasc == '' || sexo == '') {
+    if (nome === '' || especie === '' || idade === '' || raca === '' || porte === '' || datanasc === '' || sexo === '') {
         alert('Por favor, preencha todos os campos.');
         return;
     }
@@ -20,17 +22,22 @@ function cadastrarAnimal() {
         nome: nome,
         especie: especie,
         idade: idade,
-        raça : raça,
-        porte : porte,
-        datanasc : datanasc,
-        sexo : sexo
-        
+        raca: raca,
+        porte: porte,
+        datanasc: datanasc,
+        sexo: sexo
     };
 
-    // Aqui você pode enviar o objeto animal para o backend ou fazer o que for necessário
-    // Por exemplo, você pode usar AJAX para enviar os dados para o servidor.
+    console.log('Animal cadastrado: ', animal);
+    listaAnimais.push(animal);
 
-    // Limpe o formulário
+    limparFormulario();
+
+    window.location.href = "inicial.html";
+}
+
+// Função para limpar o formulário após cadastrar um animal
+function limparFormulario() {
     document.getElementById('nome').value = '';
     document.getElementById('especie').value = '';
     document.getElementById('idade').value = '';
@@ -40,9 +47,46 @@ function cadastrarAnimal() {
     document.getElementById('sexo').value = '';
 }
 
-// Exemplo de uso de um botão no HTML para acionar a função cadastrarAnimal
-// <button onclick="cadastrarAnimal()">Cadastrar Animal</button>
+// Função para pesquisar animais
+function pesquisarAnimal() {
+    var termoPesquisa = document.getElementById('pesquisaAnimal').value.toLowerCase();
 
-function salvaranimal(){
+    // Filtra a lista de animais com base no termo de pesquisa
+    var animaisFiltrados = listaAnimais.filter(function(animal) {
+        return animal.nome.toLowerCase().includes(termoPesquisa);
+    });
+
+    // Exiba a lista de animais filtrados no console
+    console.log(animaisFiltrados);
+}
+
+
+    
+
+function novaficha(){
+    window.location.href = "novaficha.html";
+}
+function botaoHome() {
     window.location.href = "inicial.html";
+}
+function cadastraranimal(){
+    window.location.href = "index.html";
+}
+
+function cancelarCadastro() {
+    var confirmacao = confirm("Tem certeza que deseja cancelar o cadastro? Ao cancelar esse cadastro, todas as pendências relacionadas a ela serão excluídas e não será possível desfazer o processo.");
+
+    if (confirmacao) {
+        window.location.href = "inicial.html";
+    } 
+}
+function salvarFicha(){
+    window.location.href = "inicial.html";
+}
+function cancelarFicha() {
+    var confirmacao = confirm("Tem certeza que deseja cancelar a criação da nova ficha? Ao excluir a ficha, todas as pendências relacionadas a ela serão excluídas e não será possível desfazer o processo.");
+
+    if (confirmacao) {
+        window.location.href = "inicial.html";
+    } 
 }

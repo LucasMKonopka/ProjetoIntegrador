@@ -20,6 +20,11 @@
 
 
 
+   
+
+
+
+
 
 
 #container-principal {
@@ -32,6 +37,11 @@
 }
 
 #CadastrodeAnimais {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#novaficha {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -92,6 +102,12 @@ button#salvar {
     background: #68D8B0;
     color: black;
 }
+#atendimento{
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
 
 
 button#novaFicha{
@@ -148,5 +164,118 @@ button#buscarFicha{
 
 #container-rodape{
     background-color: #68D8B0;
-    height: 170px;
+    height: 200px;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+}
+
+#img-logo-rodape {
+    padding-left: 20px;
+    margin-right: 395px;
+}
+
+#links-rodape {
+    display: flex;
+}
+
+#lista-rodape {
+    list-style: none;
+    display: flex;
+    margin-right: 50px;
+}
+
+#lista-rodape li {
+    margin-right: 300px;
+}
+
+#lista-rodape li strong {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 700;
+    color: rgba(1, 1, 1, 1);
+}
+
+button#botao-home {
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #68D8B0;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+button#informacoes {
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #68D8B0;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: bold;
+    margin-left: 300px;
+}
+button#faq{
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #68D8B0;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: bold;
+    margin-left: 270px;
+}
+button#sobreEmpresa {
+    padding: 5px;
+    background-color: #68D8B0;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: bold;
+    margin-left: 355px;
+}
+button#telefone{
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #68D8B0;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: bold;
+    margin-left: 240px;
+}
+button#chat{
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #68D8B0;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: bold;
+    margin-left: 730px;
+}
+
+@media (max-width: 500px) {
+    /* Adapte conforme necessário para telas pequenas */
+    #container-rodape {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #links-rodape {
+        margin-top: 10px;
+    }
 }

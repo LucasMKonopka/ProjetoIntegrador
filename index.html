@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastre o Animal</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 
@@ -38,7 +38,7 @@
                 <input type="text" id="nome" name="nome" required>
 
                 <label for="datanasc">Data de nascimento:</label>
-                <input type="char" id="datanasc" name="datanasc" required>
+                <input type="date" id="datanasc" name="datanasc" required>
 
                 <label for="especie">Espécie:</label>
                 <input type="text" id="especie" name="especie" required>
@@ -60,7 +60,7 @@
 
                 <div>
                     <button type="button" id="cancelar" onclick="cancelarCadastro()">Cancelar</button>
-                    <button type="button" id="salvar" onclick="salvaranimal()">Salvar</button>
+                    <button type="button" id="salvar" onclick="salvarAnimal()">Salvar</button>
                     
                 </div>
                 <br><br>
@@ -76,6 +76,31 @@
 
     <footer>
         <div id="container-rodape">
+            <div id="img-logo-rodape">
+                <img src="./imagem/Logo.png" alt="">
+            </div>
+
+            
+            <div id="conteudo-rodape">
+                <div id="links-rodape">
+                    <ul id="lista-rodape">
+                        <li><strong>INÍCIO</strong></li>
+                        <li><strong>SOBRE</strong></li>
+                        <li><strong>SUPORTE</strong></li>
+                    </ul>
+                </div>
+                <button id="botao-home" onclick="irParaHome()">Home</button>
+                <button id="informacoes" onclick="informacoes()">Informações</button>
+                <button id="faq" onclick="faq()">FAQ</button>
+                <div>
+                    <button id="sobreEmpresa" onclick="sobreEmpresa()">Sobre a Empresa</button>
+                    <button id="telefone" onclick="telefone()">Telefone</button>
+                </div>
+                <div>
+                    <button id="chat" onclick="chat()">Chat</button>
+                </div>
+            </div>
+            
 
         </div>
     </footer>

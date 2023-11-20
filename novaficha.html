@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicial</title>
+    <title>Nova Ficha</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 
@@ -27,16 +27,33 @@
 <!-- exemplo -->
     <main>
         <div id="container-principal">
+                <div id = "novaficha">
+                    <h2><strong>Nova Ficha</strong></h2>
+                </div>
+            
+
+            <!-- Formulário de Cadastro de Animais -->
+            <form id="formNovaFicha">
+                <label for="pesquisaAnimal">Selecione o Animal:</label>
+                <input type="text" id="pesquisaAnimal" oninput = "pesquisarAnimal()" required>
+
+                <label for="datanasc">Data do atendimento:</label>
+                <input type="date" id="dataAtendimento" name="dataAtendimento" required>
+
+                <label for="atendimento">Atendimento: </label>
+                <textarea id="atendimento" name="atendimento" rows="4"></textarea>
+
+                <div>
+                    <button type="button" id="cancelar" onclick="cancelarFicha()">Cancelar</button>
+                    <button type="button" id="salvar" onclick="salvarFicha()">Salvar</button>
+                    
+                </div>
                 <br><br>
-                <div>
-                    <button type="button" id="novaFicha" onclick="novaficha()">Nova Ficha</button>
-                </div>
-                <div>
-                    <button type="button" id="cadastrarAnimal" onclick="cadastraranimal()">Cadastrar Animal</button>
-                </div>
-                <div>
-                    <button type="button" id="buscarFicha" onclick="buscarficha()">Buscar ficha</button>  
-                </div>
+            </form>
+
+            <!-- Mensagem de Cadastro (pode ser um alert ou uma div na página) -->
+            <div id="mensagemCadastro"></div>
+
 
         </div>
     </main>
