@@ -36,6 +36,31 @@ function salvarAnimal() {
     window.location.href = "inicial.html";
 }
 
+// Função para pesquisar animais
+function pesquisarAnimal() {
+    var termoPesquisa = document.getElementById('pesquisaAnimal').value.toLowerCase();
+
+    // Filtra a lista de animais com base no termo de pesquisa
+    var animaisFiltrados = listaAnimais.filter(function(animal) {
+        return animal.nome.toLowerCase().includes(termoPesquisa);
+    });
+
+    // Exiba a lista de animais filtrados no console
+    console.log(animaisFiltrados);
+
+    // Verifique se algum animal foi encontrado
+    if (animaisFiltrados.length > 0) {
+        // Animal encontrado, você pode adicionar lógica adicional aqui
+        console.log('Animal encontrado:', animaisFiltrados[0]);
+    } else {
+        // Nenhum animal encontrado, exiba uma mensagem
+        console.log('Animal não encontrado. Crie um novo cadastro ou verifique o nome inserido.');
+        // Ou exiba uma mensagem na página para o usuário
+        document.getElementById('mensagemCadastro').innerText = 'Animal não encontrado. Crie um novo cadastro ou verifique o nome inserido.';
+    }
+}
+
+
 // Função para limpar o formulário após cadastrar um animal
 function limparFormulario() {
     document.getElementById('nome').value = '';
@@ -89,4 +114,7 @@ function cancelarFicha() {
     if (confirmacao) {
         window.location.href = "inicial.html";
     } 
+}
+function buscarficha(){
+    window.location.href = "buscarficha.html";
 }

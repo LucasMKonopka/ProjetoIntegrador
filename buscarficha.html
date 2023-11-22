@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Ficha</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div id="container-cabecario">
+            <div id="img-logo">
+                <img src="./imagem/Logo.png" alt="">
+            </div>
+
+            <div id="titulo-cabecario">
+                <h1><strong>Vet-tech</strong></h1>
+            </div>
+        </div>
+    </header>
+<!-- exemplo -->
+    <main>
+        <div id="container-principal">
+                <div id = "buscarficha">
+                    <h2><strong>Buscar Ficha</strong></h2>
+                </div>
+            
+
+            <!-- Formulário de Cadastro de Animais -->
+            <form id="formBuscarFicha">
+
+                <div id="buscar-ficha">
+                    <input type="text" id="procurarAnimal" placeholder="Pesquisar por nome">
+                    <button type="button" onclick="procurarAnimal()">Pesquisar</button>
+                </div>
+
+                <ul id="buscarFichas">
+                    <li><strong>Nome</strong></li>
+                    <li><strong>Raça</strong></li>
+                    <li><strong>Espécie</strong></li>
+                    <li><strong>Idade</strong></li>
+                </ul>
+                
+
+                
+                <br><br>
+            </form>
+
+            <!-- Mensagem de Cadastro (pode ser um alert ou uma div na página) -->
+            <div id="mensagemCadastro"></div>
+
+
+        </div>
+    </main>
+
+
+    <footer>
+        <div id="container-rodape">
+            <div id="img-logo-rodape">
+                <img src="./imagem/Logo.png" alt="">
+            </div>
+
+            
+            <div id="conteudo-rodape">
+                <div id="links-rodape">
+                    <ul id="lista-rodape">
+                        <li><strong>INÍCIO</strong></li>
+                        <li><strong>SOBRE</strong></li>
+                        <li><strong>SUPORTE</strong></li>
+                    </ul>
+                </div>
+                <button id="botao-home" onclick="irParaHome()">Home</button>
+                <button id="informacoes" onclick="informacoes()">Informações</button>
+                <button id="faq" onclick="faq()">FAQ</button>
+                <div>
+                    <button id="sobreEmpresa" onclick="sobreEmpresa()">Sobre a Empresa</button>
+                    <button id="telefone" onclick="telefone()">Telefone</button>
+                </div>
+                <div>
+                    <button id="chat" onclick="chat()">Chat</button>
+                </div>
+            </div>
+            
+
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
