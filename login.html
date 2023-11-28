@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container-principal">
+        <div class="container-esquerda">
+            <h1 class="titulo">
+                Bem-Vindos ao Vet-tech
+            </h1>
+
+            <h3>
+                Melhorando a forma de lidar com a vida animal, com a tecnologia
+            </h3>
+
+            <button type="submit" class="cadastrar">
+                Cadastre-se
+            </button>
+        </div>
+
+        <div class="container-direita">
+            <h1>
+                Acesse sua conta
+            </h1>
+
+            <div class="form">
+                <form action="processa_login.php" method="post">
+                    <label for="">E-mail:</label>
+                    <input type="email" id="username" name="username" required>
+            
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                    <a href="#">Esqueceu a senha?</a>
+            
+                    <button class="entrar" type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
