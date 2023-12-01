@@ -118,3 +118,4 @@ function cancelarFicha() {
 function buscarficha(){
     window.location.href = "buscarficha.html";
 }
+
