@@ -120,3 +120,8 @@ function buscarficha(){
 }
 
 
+
+function seCadastrar(){
+    window.location.href = "cadastro.html";
+}
+
