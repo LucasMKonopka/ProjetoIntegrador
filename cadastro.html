@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-esquerda">
+        <div id = "titulo-cadastro">
+            <h1><strong>CADASTRE-SE</strong></h1>
+        </div>
+        <div id="img-logo">
+            <img src="./imagem/image 13.png" alt="">
+        </div>
+        
+    </div>
+
+    <div class="container-direita">
+        <div id = "titulo-login">
+            <h2><strong>ACESSE SUA CONTA</strong></h2>
+        </div>
+        <form action = "./inicial.html" method = "get">
+            <label for ="nome">Nome</label>
+            <input type = "nome" id = "nome" required>
+            <input id = "formulario" type="submit" value="" style = "display: none;">
+
+            <label for = "CPF/CNPJ">CPF/CNPJ</label>
+            <input type = "CPF/CNPJ" id = "CPF/CNPJ" required>
+            <input id = "formulario" type="submit" value="" style = "display: none;">
+
+            <label for = "Email">Email</label>
+            <input type = "Email" id = "nome" required>
+            <input id = "formulario" type="submit" value="" style = "display: none;">
+
+            <label for="password">Senha</label>
+            <input type="password" id="password" required>
+            <input id = "formulario" type="submit" value="" style = "display: none;">
+
+            <label for="ConfirmarPassword">Confirmar Senha</label>
+            <input type="ConfirmarPassword" id="ConfirmarPassword" required>
+            <input id = "formulario" type="submit" value="" style = "display: none;">
+            
+
+            <button type="button" id="cadastre-se" onclick = "document.getElementById('formulario').click()">CADASTRAR-SE</button>
+        </form>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

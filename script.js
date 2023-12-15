@@ -119,3 +119,4 @@ function buscarficha(){
     window.location.href = "buscarficha.html";
 }
 
+
