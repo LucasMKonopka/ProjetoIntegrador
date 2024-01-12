@@ -125,3 +125,9 @@ function seCadastrar(){
     window.location.href = "cadastro.html";
 }
 
+function RedefinirSenha(){
+    window.location.href = "Login.html";
+}
+function VoltarLogin(){
+    window.location.href = "Login.html";
+}

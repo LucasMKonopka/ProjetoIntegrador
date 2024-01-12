@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha</title>
+    
+    <link rel = "stylesheet" href="recsenha.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="containercima">
+        <div id="img-logo">
+            <img src="./imagem/Logo.png" alt="">
+        </div>
+
+        <div id="titulo-cabecario">
+            <h1><strong>Recuperar Senha</strong></h1>
+        </div>
+
+        <div id = "subtitulo-cabecario">
+            <h2>Informe o e-mail para o qual deseja redefinir a sua senha</h2>
+        </div>
+    </div>
+
+    <form action = "./login.html" method = "get">
+        <label for = "Email">Email</label>
+        <input type = "Email" id = "nome" required>
+        <input id = "formulario" type="submit" value="" style = "display: none;">
+    </form>
+    
+
+    
+
+
+    <footer>
+        <div id="containerbaixo">
+
+            <div id="conteudo-rodape">
+                <button type="button" id="RedefinirSenha" onclick="RedefinirSenha()">Redefinir Senha</button>
+                <button type="button" id="VoltarLogin" onclick="VoltarLogin()">Voltar ao Login</button>
+            </div>
+            
+
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
